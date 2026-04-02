@@ -6,6 +6,10 @@ It was developed as part of undergraduate research and is designed to collect en
 data using multiple sensors while supporting low-power operation, timing control, and
 modular code organization.
 
+## Application
+This system is designed for long-term environmental monitoring in remote or low-power
+deployments where reliable data collection and synchronization are critical.
+
 ## Project Goals
 - Collect environmental sensor data reliably
 - Support low-power operation using deep sleep
@@ -31,6 +35,14 @@ deep sleep cycles to minimize power consumption for long-term battery-powered de
 ### Schematic
 ![Schematic](images/SGP_PCB_Schematic.jpg)
 
+## Features
+- Embedded system with a modular design
+- Power management for battery powered deployments
+- Power conservation by using deep sleep
+- Time synchronization using external RTC
+- Wireless communication using LoRa point-to-point
+- Micro-SD data logging
+
 ## Hardware Used
 - ESP32-C3 Zero
 - DS3231 RTC
@@ -41,34 +53,23 @@ deep sleep cycles to minimize power consumption for long-term battery-powered de
 - Micro-SD card module
 - LoRa module
 
-## Features
-- Embedded system with a modular design
-- Power management for battery powered deployments
-- Power conservation by using deep sleep
-- Time synchronization using external RTC
-- Wireless communication using LoRa point-to-point
-- Micro-SD data logging
-
 ## Software
 - Arduino IDE (C++ embedded development)
 - Sensor and RTC interface libraries
-- Autodesk Fusion (PCB Design)
+- Autodesk Fusion (PCB and mechanical design)
 
 ## Engineering Challenges
 - Managing deep sleep wake timing accurately
 - Correcting drift between wake cycles and logging intervals
-- Configuring the system for long-term battery powered field use
+- Configuring the system for long-term battery-powered field use
 - Designing a dense PCB within the parameters of a deployable enclosure.
 
 ## Documentation
+Additional documentation is available in the `docs/` folder:
+
 - ESP32 vs Raspberry Pi Pico comparison
 - PCB module specifications with dimensions and datasheet references
 - Environmental data log (CSV format)
-
-## Images
-- Final 3D Model
-- PCB wiring design
-- Overall schematic
 
 ## Repository Structure
 - `src/` — source code
