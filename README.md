@@ -13,20 +13,23 @@ modular code organization.
 - Enable modular and maintainable embedded code
 - Prepare the system for wireless communication and data logging
 
-## Features
-- Embedded system with a modular design
-- Power management for battery powered deployments
-- Power conservation by using deep sleep
-- Time synchronization using external RTC
-- Wireless communication using LoRa point-to-point
-- Micro-SD data logging
-
 ## System Architecture
 The system is built around an ESP32-C3 Zero microcontroller that interfaces with multiple
 environmental sensors and an external DS3231 RTC for accurate timekeeping. Sensor data is
 collected at scheduled intervals, synchronized using the RTC, and either logged locally to
 a micro-SD card or transmitted via LoRa point-to-point communication. The system leverages
 deep sleep cycles to minimize power consumption for long-term battery-powered deployments.
+
+## Hardware Design
+
+### 3D PCB Model
+![3D Model](images/SGP PCB S1.3 V1 Model.jpg)
+
+### PCB Layout
+![PCB Layout](images/SGP PCB S1.3 V1 PCB.jpg)
+
+### Schematic
+![Schematic](images/SGP PCB S1.3 V1 Schematic.jpg)
 
 ## Hardware Used
 - ESP32-C3 Zero
@@ -37,6 +40,14 @@ deep sleep cycles to minimize power consumption for long-term battery-powered de
 - INA219
 - Micro-SD card module
 - LoRa module
+
+## Features
+- Embedded system with a modular design
+- Power management for battery powered deployments
+- Power conservation by using deep sleep
+- Time synchronization using external RTC
+- Wireless communication using LoRa point-to-point
+- Micro-SD data logging
 
 ## Software
 - Arduino IDE (C++ embedded development)
