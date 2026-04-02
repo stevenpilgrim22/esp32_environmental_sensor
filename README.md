@@ -23,13 +23,13 @@ deep sleep cycles to minimize power consumption for long-term battery-powered de
 ## Hardware Design
 
 ### 3D PCB Model
-![3D Model](images/SGP PCB S1.3 V1 Model.jpg)
+![3D Model](images/SGP_PCB_Model.jpg)
 
 ### PCB Layout
-![PCB Layout](images/SGP PCB S1.3 V1 PCB.jpg)
+![PCB Layout](images/SGP_PCB_Layout.jpg)
 
 ### Schematic
-![Schematic](images/SGP PCB S1.3 V1 Schematic.jpg)
+![Schematic](images/SGP_PCB_Schematic.jpg)
 
 ## Hardware Used
 - ESP32-C3 Zero
