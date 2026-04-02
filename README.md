@@ -33,7 +33,7 @@ modular code organization.
 
 ## Software
 - Arduino IDE
-- Community libraries
+- Embedded libraries
 - Autodesk Fusion
 
 ## Engineering Challenges
@@ -41,6 +41,11 @@ modular code organization.
 - Correcting drift between wake cycles and logging intervals
 - Configure the system for long term battery powered field use
 - Designing a dense PCB within the parameters of a deployable enclosure.
+
+## Documentation
+- ESP32 vs Raspberry Pi Pico comparison
+- PCB module specifications with datasheet references
+- Environmental data log in CSV format
 
 ## Repository Structure
 - `src/` — source code
